@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Weather App</h1>
+        <div class="search">
+            <input type="text" id="city" autofocus placeholder="Enter City">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="errMsg">
+            <img src="/images/error.svg" alt="errorimg">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <h1 id="cityName"></h1>
+            <h1 id="temp"></h1>   
+        </div>
+        <div class="condition">
+            <p id="type"></p>
+        </div>
+        <div class="level">
+            <p id="high"></p>
+            <p id="low"></p>
+        </div>
+    </div>
+
+<!--script file-->
+<script src="script.js"></script>
+</body>
+</html>

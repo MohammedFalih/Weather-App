@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/images/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 450px;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 15px;
+    letter-spacing: 6px;
+    word-spacing:8px;
+    color: coral;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 45px;
+}
+.search {
+    padding: 10px 0px;
+}
+
+#city {
+    outline: none;
+    border: 2px solid coral;
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+    background-color: transparent;
+    border-radius: 8px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+::placeholder {
+    color: white;
+    font: 16px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+#searchBtn {
+    outline: none;
+    border: none;
+    width: 65px;
+    padding: 5px;
+    background-color: rebeccapurple;
+    color: white;
+    height: 36px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.weather {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(250, 249, 249);
+}
+
+#temp {
+    font-size: 70px;
+}
+
+#cityName {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+.errMsg {
+    display: none;
+}
+
+.errMsg p {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.errMsg img {
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.level p {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+#type {
+    text-transform: capitalize;
+}
