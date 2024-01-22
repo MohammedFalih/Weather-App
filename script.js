@@ -1,5 +1,4 @@
 
-
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?&appid=748778755175dcebdaf648c31eb5369b&units=metric&q=";
 console.log(apiURL);
 
