@@ -30,5 +30,20 @@ async function checkWeather(city) {
 
 searchBtn.addEventListener("click", () => {
     // document.querySelector(".search").style.display = "none";
-    checkWeather(searchCity.value);
+    if(searchCity.value!== "") {
+        checkWeather(searchCity.value);
+        searchCity.value="";    
+        document.querySelector("#temp").style.display = "block";
+        document.querySelector("#high").style.display = "inline-block";
+        document.querySelector("#low").style.display = "inline-block";
+        document.querySelector("#type").style.display = "inline-block";
+    }
+    else {
+        document.querySelector(".errMsg").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
+        document.querySelector("#temp").style.display = "none";
+        document.querySelector("#high").style.display = "none";
+        document.querySelector("#low").style.display = "none";
+        document.querySelector("#type").style.display = "none";
+    }
 })
